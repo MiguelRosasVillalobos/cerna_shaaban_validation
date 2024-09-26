@@ -1,0 +1,35 @@
+//Viscosidad cinematica
+nu = 0.00000115 // m^2/s (agua a 20°C)
+
+//Longitud caracteristica
+Ld = 0.029 // m (diametro del ducto)
+
+//Reynolds
+Re = 30000 // adimensional
+
+//Velocidad
+//v = 0.5 // m/s
+
+// radio del ducto
+rd = 0.0145 // m (paper(2015)On the Performance of Perforated Plate with Optimized Hole Geometry)
+
+// largo del ducto lado 1
+l1 = 0.435 // m (paper(2015)On the Performance of Perforated Plate with Optimized Hole Geometry)
+
+// espesor de la placa
+a = 0.003  // m (paper(2015)On the Performance of Perforated Plate with Optimized Hole Geometry)
+
+// radio del poro
+rp = 0.0025 // m (paper(2015)On the Performance of Perforated Plate with Optimized Hole Geometry)
+
+//numero de poros
+np = 4 // adimensional (paper(2015)On the Performance of Perforated Plate with Optimized Hole Geometry)
+
+//tiempo de simulacion
+tf = 600 // s
+
+//delta de tiempo
+dt = 1 // s
+
+//escribir resultado cada tantos deltas de tiempo
+wi = 100 // adimensional
