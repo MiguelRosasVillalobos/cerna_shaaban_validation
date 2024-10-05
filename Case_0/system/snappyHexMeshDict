@@ -146,7 +146,7 @@ snapControls
 {
     nSmoothPatch 3;
     tolerance 2.0;
-    nSolveIter 100;
+    nSolveIter 150;
     nRelaxIter 5;
     nFeatureSnapIter 10;
     implicitFeatureSnap true;
@@ -170,9 +170,9 @@ addLayersControls
         }
     }
 
-    expansionRatio 1.1;
-    firstLayerThickness 0.6;
-    minThickness 0.2;
+    expansionRatio 1.2;
+    firstLayerThickness 1.0;
+    minThickness 0.5;
     nGrow 0;
     featureAngle 60;
     nRelaxIter 5;
@@ -189,7 +189,7 @@ addLayersControls
 meshQualityControls
 {
     maxNonOrtho 65;
-    maxBoundarySkewness 20;
+    maxBoundarySkewness 4;
     maxInternalSkewness 4;
     maxConcave 80;
     minVol 1e-13;
