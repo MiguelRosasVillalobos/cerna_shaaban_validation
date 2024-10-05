@@ -144,9 +144,9 @@ for ((i = 1; i <= $cantidad_simulaciones; i++)); do
     touch "${valores_lc[$j]}.foam"
 
     surfaceFeatureExtract
-    blockMesh
-    snappyHexMesh -overwrite
-
+    blockMesh >blockMesh.log
+    snappyHexMesh -overwrite >snappyHexMesh.log
+    checkMesh >checkMesh.log
     decomposePar
     mpirun -np 6 simpleFoam -parallel >log
     cd ..
