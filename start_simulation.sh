@@ -78,20 +78,6 @@ for ((i = 1; i <= $cantidad_simulaciones; i++)); do
   sed -i "s/\$nuu/$nu/g" ./constant/transportProperties
   sed -i "s/\$LL/$Ld/g" ./0/U
 
-  sed -i "s/\$rdd/$rd/g" ./mesh.geo
-  sed -i "s/\$l11/$l1/g" ./mesh.geo
-  sed -i "s/\$aa/$a/g" ./mesh.geo
-  sed -i "s/\$lcccc/$lcc/g" ./mesh.geo
-
-  sed -i "s/\$rdd/$rd/g" ./geometry_script/geometry.geo
-  sed -i "s/\$l11/$l1/g" ./geometry_script/geometry.geo
-  sed -i "s/\$aa/$a/g" ./geometry_script/geometry.geo
-  sed -i "s/\$rpp/$rp/g" ./geometry_script/geometry.geo
-
-  sed -i "s/\$npp/$np/g" ./geometry_script/generator_point_process.py
-  sed -i "s/\$rpp/$rp/g" ./geometry_script/generator_point_process.py
-  sed -i "s/\$rdd/$rd/g" ./geometry_script/generator_point_process.py
-
   sed -i "s/\$wii/$wi/g" ./system/controlDict
   sed -i "s/\$dtt/$dt/g" ./system/controlDict
   sed -i "s/\$tff/$tf/g" ./system/controlDict
@@ -116,9 +102,6 @@ for ((i = 1; i <= $cantidad_simulaciones; i++)); do
   mv 0/ Case_0/
   mv constant/ Case_0/
   mv system/ Case_0/
-  mv geometry_script/ Case_0/
-  mv mesh.geo Case_0/
-  mv mesh.msh Case_0/
 
   # Se inicia el ciclo para variar el valor de lc
   for j in {0..7}; do
