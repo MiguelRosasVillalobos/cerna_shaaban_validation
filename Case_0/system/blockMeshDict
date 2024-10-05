@@ -28,7 +28,7 @@ z1 #eval{-$a};
 z2 #eval{$l1 -1*$rd};
 z3 #eval{$l1 + $a + 3*$rd};
 z4 #eval{2*$l1 + 2*$a};
-xy 30;
+xy 35;
 
 
 vertices
