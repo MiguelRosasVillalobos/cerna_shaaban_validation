@@ -9,10 +9,10 @@ fi
 # Obtiene la cantidad_simulaciones desde el primer argumento
 cantidad_simulaciones=$1
 
-lc1=50
-lc2=100
-lc3=200
-lc4=300
+lc1=100
+lc2=200
+lc3=300
+lc4=400
 
 # Valores de Reynolds a utilizar
 valores_lc=("lc1" "lc2" "lc3" "lc4")
@@ -104,7 +104,7 @@ for ((i = 1; i <= $cantidad_simulaciones; i++)); do
   mv system/ Case_0/
 
   # Se inicia el ciclo para variar el valor de lc
-  for j in {0..7}; do
+  for j in {0..3}; do
     #se genera contador k
     k=$((j + 1))
 
